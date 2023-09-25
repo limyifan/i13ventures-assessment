@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   // server side rendering mode
   ssr: false,
+  target: 'static',
   postcss: {
     plugins: {
       tailwindcss: {},
