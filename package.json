@@ -1,0 +1,28 @@
+{
+  "name": "i13ventures",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18.16.19",
+    "nuxt": "^3.6.3",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "tailwindcss": "^3.3.2",
+    "unplugin-icons": "^0.14.15",
+    "unplugin-vue-components": "^0.22.12",
+    "vite-plugin-node-polyfills": "^0.9.0",
+    "vue": "^3.3.4",
+    "sass": "1.53.0",
+    "sass-loader": "^13.3.2"
+  },
+  "dependencies": {
+    "vite": "^4.4.4"
+  }
+}
