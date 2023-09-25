@@ -1,0 +1,26 @@
+/* font-family */
+$base-font-family: "Plus Jakarta Sans";
+$poppins: "Poppins";
+$inter: "Inter";
+
+@mixin getText($font-size, $font-weight,$line-height,$font-family:null) {
+  @if $font-family == null {
+    $font-family: $base-font-family;
+  }
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin mq($width, $type: max) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
