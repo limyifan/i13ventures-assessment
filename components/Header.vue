@@ -1,51 +1,67 @@
-<script setup lang="ts">
+<script lang="ts" setup>
+import Button from "~/components/widgets/Button.vue";
 
+definePageMeta({
+  layout: "nav",
+});
+
+const links = [
+  {
+    name: "Home",
+    path: "/",
+  },
+  {
+    name: "Insurances",
+    path: "/insurances",
+  },
+  {
+    name: "Mortgages & Loans",
+    path: "/mortgagesLoans",
+  },
+  {
+    name: "Products",
+    path: "/products",
+  },
+  {
+    name: "Support",
+    path: "/support",
+  },
+];
 </script>
 
 <template>
-  <NuxtLayout name="nav">
-    <div class="flex flex-row items-center justify-between header w-full">
-      <img src="/img/logo.jpeg" alt="logo" class="logo" />
-      <div class="flex flex-row items-center justify-between gap-4">
-        <NuxtLink to="/" class="nav-link">Home</NuxtLink>
-        <div class="vertical-line"></div>
-        <NuxtLink to="about"  class="nav-link">About</NuxtLink>
-        <div class="vertical-line"></div>
-        <NuxtLink to="service"  class="nav-link">Service</NuxtLink>
-        <div class="vertical-line"></div>
-        <NuxtLink to="contact"  class="nav-link">Contact</NuxtLink>
+  <div class="flex w-screen items-center justify-between px-10 py-4">
+    <!--    lef-col-->
+    <div class="flex items-center">
+      <img alt="logo-full" class="w-52" src="/img/logo_full.png" />
+
+      <!--      nav links-->
+      <div class="flex items-center gap-4">
+        <NuxtLink
+          v-for="(link, index) in links"
+          :key="index"
+          :to="link.path"
+          class="text-md font-saira font-medium capitalize leading-relaxed text-gray-800"
+        >
+          {{ link.name }}
+        </NuxtLink>
+      </div>
+      <!--      nav links-->
+
     </div>
+    <!--    lef-col-->
+
+    <!--    right-col-->
+    <div class="flex items-center gap-4">
+      <NuxtLink class="underline" to="/login">Login</NuxtLink>
+      <Button text="Signup" />
     </div>
-  </NuxtLayout>
+    <!--    right-col-->
+  </div>
 </template>
-
-<style scoped lang="scss">
-.header{
-  .logo{
-    width: 9.5625rem;
-    height: 6.5rem;
-  }
-  .nav-link{
-    color: #FFF;
-    font-family: "Krub";
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 600;
-  }
-  .vertical-line{
-    width: 0.0625rem;
-    height: 1.1875rem;
-    background: rgba(255, 255, 255, 0.20);
-    margin: 0 1.88rem;
-  }
-}
-
-</style>
-<style scoped>
+<style lang="scss" scoped>
 .router-link-active {
- text-decoration: underline;
-  text-underline-offset: 1.5rem;
-  text-decoration-color: #FFF;
+  text-decoration-color: $primary!important;
 }
-</style>
 
+</style>

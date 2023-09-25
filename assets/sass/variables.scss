@@ -1,81 +1,57 @@
 /* font */
-/* Krub-300 */
-@font-face {
-  font-family: "Krub";
-  font-style: normal;
-  font-weight: 300;
-  src: local("Krub"),
-  url("/fonts/Krub-Light.ttf") format("truetype");
-}
 
-/* Krub-400 */
+/* Saira-400 */
 @font-face {
-  font-family: "Krub";
+  font-family: "Saira";
   font-style: normal;
   font-weight: 400;
-  src: local("Krub"),
-  url("/fonts/Krub-Regular.ttf") format("truetype");
+  src: local("Saira"),
+  url("/fonts/Saira-Regular.ttf") format("truetype");
 }
 
-/* Krub-500 */
+/* Saira-500 */
 @font-face {
-  font-family: "Krub";
+  font-family: "Saira";
   font-style: normal;
   font-weight: 500;
-  src: local("Krub"),
-  url("/fonts/Krub-Medium.ttf") format("truetype");
+  src: local("Saira"),
+  url("/fonts/Saira-Medium.ttf") format("truetype");
 }
 
-/* Krub-600 */
+/* Saira-600 */
 @font-face {
-  font-family: "Krub";
+  font-family: "Saira";
   font-style: normal;
   font-weight: 600;
-  src: local("Krub"),
-  url("/fonts/Krub-SemiBold.ttf") format("truetype");
+  src: local("Saira"),
+  url("/fonts/Saira-SemiBold.ttf") format("truetype");
 }
 
-/* Krub-700 */
+/* Saira-700 */
 @font-face {
-  font-family: "Krub";
+  font-family: "Saira";
   font-style: normal;
   font-weight: 700;
-  src: local("Krub"),
-  url("/fonts/Krub-Bold.ttf") format("truetype");
+  src: local("Saira"),
+  url("/fonts/Saira-Bold.ttf") format("truetype");
 }
 
-
-/* Rubik-400 */
+/* Rowdies-400 */
 @font-face {
-  font-family: "Rubik";
+  font-family: "Rowdies";
   font-style: normal;
   font-weight: 400;
-  src: local("Rubik"),
-  url("/fonts/Rubik-Regular.ttf") format("truetype");
+  src: local("Rowdies"),
+  url("/fonts/Rowdies-Regular.ttf") format("truetype");
 }
-/* Rubik-500 */
+
+/* Rowdies-700 */
 @font-face {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 500;
-  src: local("Rubik"),
-  url("/fonts/Rubik-Medium.ttf") format("truetype");
-}
-/* Rubik-600 */
-@font-face {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 600;
-  src: local("Rubik"),
-  url("/fonts/Rubik-SemiBold.ttf") format("truetype");
-}
-/* Rubik-700 */
-@font-face {
-  font-family: "Rubik";
+  font-family: "Rowdies";
   font-style: normal;
   font-weight: 700;
-  src: local("Rubik"),
-  url("/fonts/Rubik-Bold.ttf") format("truetype");
+  src: local("Rowdies"),
+  url("/fonts/Rowdies-Bold.ttf") format("truetype");
 }
 
 /* breakpoint */
@@ -90,4 +66,4 @@ $breakpoints: (
 );
 
 /* color */
-$primary: #091242;
+$primary: #2AAA94;

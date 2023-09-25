@@ -1,9 +1,10 @@
 <script setup lang="ts">
 
+import Introduction from "~/components/index/Introduction.vue";
 </script>
 
 <template>
-    <h1>welcome to i13ventures</h1>
+    <Introduction/>
 </template>
 
 <style scoped>

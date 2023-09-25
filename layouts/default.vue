@@ -1,12 +1,12 @@
 <script setup></script>
 
 <template>
-  <div>
+  <div class="flex h-screen flex-col overflow-hidden">
     <Header />
+    <div class="grow bg-[url('/img/index/bg.png')]">
       <slot />
-    <Footer />
+    </div>
   </div>
 </template>
 
-<style scoped lang="scss">
-</style>
+<style lang="scss" scoped></style>

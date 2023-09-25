@@ -11,11 +11,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        krub: ["Krub", "sans-serif"],
-        rubik: ["Rubik", "sans-serif"],
+        saira: ["Saira", "sans-serif"],
+        rowdies: ["Rowdies", "sans-serif"],
       },
       colors:{
-        'primary':"#091242"
+        'primary':"#2AAA94"
       },
       flexGrow: {
         2: '2'
@@ -40,6 +40,9 @@ module.exports = {
         '17': '4.25rem',
         '27': '5.75rem',
       },
+      flex:{
+        3: '3'
+      }
     },
   },
   plugins: [],
