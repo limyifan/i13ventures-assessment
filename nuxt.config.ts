@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   // server side rendering mode
   ssr: false,
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
   target: 'static',
   postcss: {
     plugins: {

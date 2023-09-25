@@ -36,7 +36,7 @@ const links = [
       <img alt="logo-full" class="w-52" src="/img/logo_full.png" />
 
       <!--      nav links-->
-      <div class="flex items-center gap-4">
+      <div class=" items-center gap-4 sm:hidden lg:flex" >
         <NuxtLink
           v-for="(link, index) in links"
           :key="index"

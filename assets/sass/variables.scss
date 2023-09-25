@@ -36,6 +36,16 @@
   url("/fonts/Saira-Bold.ttf") format("truetype");
 }
 
+/* Rowdies-300 */
+@font-face {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Rowdies"),
+  url("/fonts/Rowdies-Light.ttf") format("truetype");
+}
+
+
 /* Rowdies-400 */
 @font-face {
   font-family: "Rowdies";

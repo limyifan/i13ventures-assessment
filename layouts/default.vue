@@ -1,9 +1,9 @@
 <script setup></script>
 
 <template>
-  <div class="flex h-screen flex-col overflow-hidden">
+  <div class="flex h-screen flex-col ">
     <Header />
-    <div class="grow bg-[url('/img/index/bg.png')]">
+    <div class="grow bg-[url('/img/index/bg.png')] bg-cover bg-no-repeat bg-center">
       <slot />
     </div>
   </div>
