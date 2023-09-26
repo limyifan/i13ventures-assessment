@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
+  modules: ["@pinia/nuxt"],
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
   scss:["~/assets/sass/variables.scss","~/assets/sass/mixins.scss"],

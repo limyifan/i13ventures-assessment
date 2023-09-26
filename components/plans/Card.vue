@@ -10,7 +10,7 @@ const props = defineProps({
 <template>
   <NuxtLink
     :to="`/products${url}`"
-    class="sm:basis-[66%] card flex h-80 flex-col rounded-2xl bg-white lg:basis-[26%]"
+    class="card flex flex-col rounded-2xl bg-white sm:h-80 sm:basis-[66%] lg:h-[18rem] lg:basis-[26%] xl:h-[28rem] xl:basis-[20%]"
   >
     <!--  background image-->
     <div
@@ -20,10 +20,14 @@ const props = defineProps({
     <!--  background image-->
 
     <div class="flex flex-1 flex-col px-2 pt-4">
-      <p class="font-saira text-xl font-semibold leading-9 text-slate-700">
+      <p
+        class="font-saira text-lg font-semibold leading-9 text-slate-700 xl:text-2xl"
+      >
         {{ title }}
       </p>
-      <p class="text-md leading-0 font-saira font-normal text-slate-700">
+      <p
+        class="leading-0 font-saira text-xs font-normal text-slate-700 xl:text-lg"
+      >
         {{ desc }}
       </p>
     </div>

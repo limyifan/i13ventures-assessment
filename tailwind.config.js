@@ -13,9 +13,11 @@ module.exports = {
       'sm': '375px',
       'md': '768px',
       'lg': '1024px',
+      'xl':'2000px'
     },
     extend: {
       fontFamily: {
+        plus: ["Plus Jakarta Sans", "sans-serif"],
         saira: ["Saira", "sans-serif"],
         rowdies: ["Rowdies", "sans-serif"],
       },
