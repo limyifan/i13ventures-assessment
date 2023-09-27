@@ -1,6 +1,8 @@
-# Mortgage Advisor Chatbot - Implementation Documentation
+# Implementation Documentation
 
 Live Demo: https://main--splendorous-gnome-33e932.netlify.app/
+
+Figma Design: https://www.figma.com/file/sAwQns8zfcoj585VTSurvK/Education-or-Online-education-online-courses-or-elearning-or-lms-figma-template-9-(Community)?type=design&node-id=0%3A1&mode=design&t=VwS1htdleWSsZOKA-1
 ## Approach
 - Used a conversational approach with step-by-step questions to guide user through mortgage consultation flow
 - Started with open-ended goal questions, then funneled down to more specific numeric/financial detail questions
