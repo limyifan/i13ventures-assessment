@@ -12,7 +12,7 @@ const { plans } = usePlans();
 
 <template>
   <div class="flex min-h-screen w-screen sm:flex-col md:flex-row">
-    <Sidebar />
+    <Sidebar plan="Please select one of the products that you desired" />
     <div
       class="flex h-screen flex-1 flex-wrap items-center justify-center gap-4 overflow-y-scroll sm:px-2 sm:py-6 md:px-8 lg:py-0"
     >

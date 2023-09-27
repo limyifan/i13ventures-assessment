@@ -11,9 +11,8 @@ export const useRouting = () => {
             router.push("/intro")
         }
         else
-        {
             router.push("/plans")
-        }
+        // router.push("/intro")
     };
     return{
         viewCourses

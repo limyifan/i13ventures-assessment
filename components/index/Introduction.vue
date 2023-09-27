@@ -16,7 +16,7 @@ const { viewCourses } = useRouting();
         Smarter Coverage for Modern Life
       </p>
       <p
-        class="mt-2 font-rowdies font-normal leading-[5rem] text-white sm:text-5xl lg:text-5xl"
+        class="my-6 font-rowdies font-normal leading-[5rem] text-white sm:text-5xl lg:text-5xl"
       >
         Insuring Your Tomorrow, Simplified Today
       </p>
@@ -35,11 +35,12 @@ const { viewCourses } = useRouting();
           Get Free Consultation
         </p>
       </div>
-      <SearchBox />
+      <SearchBox class="mt-4" />
     </div>
     <img
       alt="professional"
-      class="opacity-90 sm:w-full lg:w-[42rem]"
+      class="sm:w-full lg:w-[42rem]"
+      style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) brightness(0.9); "
       src="/img/index/professional.png"
     />
   </div>

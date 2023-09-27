@@ -48,7 +48,7 @@ const finish = () => {
 
 <template>
   <div
-    class="inline-flex w-96 flex-col gap-8 rounded-2xl border border-black bg-neutral-100 p-4 shadow"
+    class="inline-flex sm:w-[85vw] md:w-[28rem] lg:w-[35rem] flex-col gap-8 rounded-2xl border border-black bg-neutral-100 p-4 shadow"
   >
     <p class="font-plus text-xl font-semibold text-black">
       {{ questionTitle }}

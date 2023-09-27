@@ -1,6 +1,10 @@
 <script lang="ts" setup>
 import Button from "~/components/widgets/Button.vue";
 import AIBot from "~/components/widgets/AIBot.vue";
+
+const props=defineProps<{
+  plan:string
+}>()
 </script>
 
 <template>
@@ -14,7 +18,7 @@ import AIBot from "~/components/widgets/AIBot.vue";
     <p
       class="mb-12 mt-8 font-rowdies text-xl font-normal text-black sm:hidden md:block"
     >
-      Please select one of the products that you desired
+      {{plan}}
     </p>
     <textarea
       class="w-full items-center justify-start rounded-md bg-white p-2 shadow sm:hidden md:block"
