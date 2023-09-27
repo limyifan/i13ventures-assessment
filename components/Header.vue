@@ -100,7 +100,7 @@ const toggleSubMenu = () => {
     <div class="dropdown-menu flex w-screen flex-col items-center gap-8 bg-zinc-100 pl-2">
       <NuxtLink
           class=" font-plus text-2xl font-bold leading-10 tracking-widest text-black"
-          @click.prevent="toggleMobileDropdownMenu"
+          @click="viewCourses"
           to="/"
           v-for="(link,i) in links"
           :style="`padding-top:${i===0?'2rem':'0'}`"

@@ -1,9 +1,11 @@
 <script setup></script>
 
 <template>
-  <div class="flex md:h-screen flex-col ">
+  <div class="flex h-screen flex-col md:h-screen">
     <Header />
-    <div class="grow bg-[url('/img/index/bg.png')] bg-cover bg-no-repeat bg-center overflow-x-hidden lg:overflow-y-hidden">
+    <div
+      class="h-full grow overflow-x-hidden bg-cover bg-center bg-no-repeat sm:bg-[#211084] lg:overflow-y-hidden lg:bg-[url('/img/index/bg.png')]"
+    >
       <slot />
     </div>
   </div>

@@ -27,7 +27,7 @@ const props=defineProps<{
     />
     <Button class="mt-4 w-32 sm:hidden md:block" text="Submit" />
 <!--    <Button class="ml-2 w-20 sm:block md:hidden" text="Ask Bob" />-->
-    <AIBot/>
+    <AIBot :show-on-pc="false"/>
   </div>
 </template>
 

@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+const props = defineProps<{
+  showOnPc: boolean;
+}>();
 const showWindow = ref(false);
 const toggleWindow = () => {
   showWindow.value = !showWindow.value;
@@ -10,7 +13,8 @@ const toggleWindow = () => {
     <img
       v-if="!showWindow"
       alt="ai-icon"
-      class="bottom-6 right-6 h-9 w-9 sm:fixed md:hidden"
+      class="bottom-6 right-6 h-9 w-9 sm:fixed cursor-pointer"
+      :style="`display:${showOnPc ? 'block' : 'none'};`"
       src="/img/plans/ai.png"
       @click="toggleWindow"
     />
@@ -18,7 +22,7 @@ const toggleWindow = () => {
     <Transition name="fade-in">
     <div
       v-if="showWindow"
-      class="fixed bottom-20 right-6 flex h-[50vh] w-[90vw] flex-col rounded-2xl bg-white"
+      class="fixed bottom-20 right-6 flex h-[50vh] sm:w-[90vw] md:w-[23rem] flex-col rounded-2xl bg-white"
     >
       <div
         class="relative flex h-14 items-center justify-center rounded-tl-2xl rounded-tr-2xl bg-teal-500"
@@ -28,7 +32,7 @@ const toggleWindow = () => {
         </p>
         <img
           alt="close-icon"
-          class="absolute right-3 top-1/2 w-6 translate-y-[-50%]"
+          class="absolute right-3 top-1/2 w-6 translate-y-[-50%] cursor-pointer"
           src="/img/plans/close.png"
           @click="toggleWindow"
         />
@@ -50,7 +54,7 @@ const toggleWindow = () => {
           class="relative flex w-full items-center rounded-md bg-white px-4 py-1 shadow"
         >
           <input class="grow" placeholder="Write something here..." />
-          <img alt="send-icon" class="w-6" src="/img/plans/send.png" />
+          <img alt="send-icon" class="w-6 cursor-pointer" src="/img/plans/send.png" />
         </div>
       </div>
     </div>

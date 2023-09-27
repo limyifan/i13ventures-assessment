@@ -1,9 +1,10 @@
 <script lang="ts" setup>
 import PlanCard from "~/components/results/PlanCard.vue";
 import { PlanType } from "~/types/plan";
+import AIBot from "~/components/widgets/AIBot.vue";
 
 definePageMeta({
-  middleware: "",
+  middleware: "auth-no-re-enter",
 });
 
 const plans: PlanType[] = [
@@ -33,10 +34,11 @@ const plans: PlanType[] = [
 
 <template>
   <div
-    class="flex w-screen items-center justify-center gap-20 px-4 py-6 sm:flex-col lg:flex-row h-screen"
+    class="flex w-screen items-center justify-center px-4 py-6 sm:flex-col sm:gap-10 lg:h-screen lg:flex-row lg:gap-20"
   >
+    <!--    plans div-->
     <div
-      class="inline-flex sm:w-[90vw] md:w-[25rem] lg:w-[45rem] flex-col gap-4 rounded-2xl bg-zinc-300 bg-opacity-30 px-6 py-8"
+      class="inline-flex flex-col gap-4 rounded-2xl bg-zinc-300 bg-opacity-30 px-6 py-8 sm:order-1 sm:w-[90vw] md:w-[25rem] lg:order-none lg:w-[45rem]"
     >
       <p class="font-saira text-2xl font-bold text-white">
         Your Customized Financing Options
@@ -45,11 +47,17 @@ const plans: PlanType[] = [
         Based on your financial situation and goals, <br />We have customized 3
         mortgage/loan plans for you to consider:
       </p>
-      <div class="flex sm:flex-col lg:flex-row w-full justify-between gap-4">
+      <div class="flex w-full justify-between gap-4 sm:flex-col lg:flex-row">
         <PlanCard v-for="plan in plans" :plan="plan" />
       </div>
     </div>
-    <img alt="result" class="w-[30rem]" src="/img/result/result.png" />
+    <!--    plans div-->
+    <img
+      alt="result"
+      class="w-[30rem] sm:order-none lg:order-1"
+      src="/img/result/result.png"
+    />
+    <AIBot :show-on-pc="true" />
   </div>
 </template>
 
