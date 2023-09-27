@@ -21,7 +21,8 @@ Figma Design: https://www.figma.com/file/sAwQns8zfcoj585VTSurvK/Education-or-Onl
 - More personalized pros/cons analysis could be provided on each recommended option
 - Chatbot could integrate with rate checker APIs to provide real-time rate quotes
 ## Future Improvements
-- [ ] Get a better design for the whole website as I am not strong on designing UI
+- [ ] Add a loading screen to preload all images
+- [ ] Get a better design for the whole website for a more professional appearance
 - [ ] Add more user-friendly features like a progress bar, a back button, and a clear way to restart the chatbot
 - [ ] Add more animations to make the whole website more interactive
 - [ ] Expanding chatbot capabilities to cover full mortgage application process end-to-end
