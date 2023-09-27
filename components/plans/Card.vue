@@ -10,7 +10,7 @@ const props = defineProps({
 <template>
   <NuxtLink
     :to="`/products${url}`"
-    class="card flex flex-col rounded-2xl bg-white sm:h-80 sm:basis-[66%] lg:h-[18rem] lg:basis-[26%] xl:h-[28rem] xl:basis-[20%]"
+    class="card flex flex-col rounded-2xl bg-white sm:h-80 sm:basis-[66%] lg:h-[18rem] lg:basis-[26%] xl:h-[25rem] xl:basis-[20%]"
   >
     <!--  background image-->
     <div

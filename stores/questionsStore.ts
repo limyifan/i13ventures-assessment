@@ -14,6 +14,10 @@ export const useQuestionsStore = defineStore('questions',{
         updateQuestion(ans: string) {
             this.questions[this.currStep].answer = ans
         },
+        clearAnswers() {
+            this.questions.forEach(q => q.answer = "")
+            this.currStep=0
+        },
         nextStep(ans) {
             this.updateQuestion(ans)
             if(this.currStep < this.questions.length - 1)

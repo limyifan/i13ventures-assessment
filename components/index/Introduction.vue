@@ -1,49 +1,58 @@
-<script setup lang="ts">
-
+<script lang="ts" setup>
 import SearchBox from "~/components/index/SearchBox.vue";
-import {useLocalstorage} from "~/composables/useLocalstorage";
+import { useRouting } from "~/composables/useRouting";
 
-const router=useRouter()
-const viewCourses = () => {
-  const{getIsIntroPresented,setIsIntroPresented}=useLocalstorage()
-  const isPresented =getIsIntroPresented()
-  if(!isPresented){
-    setIsIntroPresented(true)
-    router.push("/intro")
-  }
-  else
-  {
-    router.push("/plans")
-  }
-};
+const { viewCourses } = useRouting();
 </script>
 
 <template>
-<div class="flex items-center justify-between pl-10 sm:flex-col md:flex-row">
-  <div class="flex flex-col sm:w-full md:w-[40rem]">
-    <p class=" text-white text-opacity-80 text-md font-semibold font-saira uppercase leading-tight tracking-widest">Smarter Coverage for Modern Life</p>
-    <p class="text-white text-5xl font-normal font-rowdies leading-[5rem] mt-2">Insuring Your Tomorrow, Simplified Today</p>
-<div class="flex items-center gap-8 my-20">
-  <div @click="viewCourses" class="w-48 h-14 pr-px rounded-lg border-2 border-white justify-center items-center inline-flex view-plans-btn">
-      <p class=" text-white text-lg font-semibold font-['Saira'] leading-7 tracking-wide ">View Plans</p>
+  <div
+    class="flex items-center sm:flex-col sm:justify-center sm:px-4 sm:py-4 lg:flex-row lg:justify-between lg:px-10 lg:py-0 xl:justify-center"
+  >
+    <div class="flex flex-col sm:w-full md:w-[40rem]">
+      <p
+        class="text-md font-saira font-semibold uppercase leading-tight tracking-widest text-white text-opacity-80"
+      >
+        Smarter Coverage for Modern Life
+      </p>
+      <p
+        class="mt-2 font-rowdies font-normal leading-[5rem] text-white sm:text-5xl lg:text-5xl"
+      >
+        Insuring Your Tomorrow, Simplified Today
+      </p>
+      <div class="my-5 flex items-center gap-8">
+        <div
+          class="view-plans-btn inline-flex h-14 w-48 items-center justify-center rounded-lg border-2 border-white pr-px"
+          @click="viewCourses"
+        >
+          <p
+            class="font-['Saira'] text-lg font-semibold leading-7 tracking-wide text-white"
+          >
+            View Plans
+          </p>
+        </div>
+        <p class="font-saira text-lg font-medium leading-10 text-white">
+          Get Free Consultation
+        </p>
+      </div>
+      <SearchBox />
+    </div>
+    <img
+      alt="professional"
+      class="opacity-90 sm:w-full lg:w-[42rem]"
+      src="/img/index/professional.png"
+    />
   </div>
-  <p class="  text-white text-lg font-medium font-['Saira'] leading-10">Get Free Consultation</p>
-</div>
-    <SearchBox/>
-  </div>
-  <div class="flex">
-    <img src="/img/index/professional.png" alt="professional" class="w-[40rem]" />
-  </div>
-</div>
 </template>
 
-<style scoped lang="scss">
-.view-plans-btn{
+<style lang="scss" scoped>
+.view-plans-btn {
   background: rgba(255, 255, 255, 0);
-  transition: .15s ease-in-out;
+  transition: 0.15s ease-in-out;
   cursor: pointer;
 }
-.view-plans-btn:hover{
+
+.view-plans-btn:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 </style>
