@@ -16,7 +16,7 @@ const { viewCourses } = useRouting();
         Smarter Coverage for Modern Life
       </p>
       <p
-        class="my-6 font-rowdies font-normal leading-[5rem] text-white sm:text-5xl lg:text-5xl"
+        class="my-6 font-rowdies font-normal leading-6 text-white sm:text-5xl lg:text-5xl" style="line-height: 3.7rem"
       >
         Insuring Your Tomorrow, Simplified Today
       </p>
